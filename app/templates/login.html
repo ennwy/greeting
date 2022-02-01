@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='login_page.css') }}" />
+
+<div class="form-container">
+	<form class="form" action="" method="post" novalidate>
+		{{ form.hidden_tag() }}
+		<div class="login-form">
+			{{ form.username(class="name-input-form name-input", placeholder="Name") }}
+			{{ form.submit(class="name-input-form name-submit") }}
+		</div>
+
+		<div class="input-errors">
+			{% for error in form.username.errors %}
+
+				{{ error }}
+
+			{% endfor %}
+		</div>
+
+		<div class="greeting-message">
+			{% with message = get_flashed_messages().0 %}
+
+			{{ message }}
+
+			{% endwith %}
+		</div>
+		
+	</form>
+	<a class="btn url-login-page" href="{{ url_for('all_users') }}">All users</a>
+</div>
+{% endblock %}

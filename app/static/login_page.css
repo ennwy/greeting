@@ -1,0 +1,102 @@
+.form-container {
+	display: grid;
+	width: 100%;
+	padding: 20px;
+	height: 100vh;
+	max-height: 100vh;
+	text-align: center;
+}
+
+.form {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: min-content;
+	margin-top: auto;
+}
+
+/*
+NAME INPUT STYLES
+*/
+
+.login-form {
+	order: 2;
+}
+
+.name-input-form {
+	padding: 10px 15px;
+	margin: 0;
+	outline: none;
+	border-radius: 0;
+}
+
+.name-input {
+  border-radius: 15px 0 0 15px;
+  background: #fff;
+  padding: 10px 10px;
+  border: 1px solid #e2e2e2;
+}
+
+.name-input:focus {
+	border: 1px solid #00bea2;
+  box-shadow: 0px 0px 2px #00d1b2;
+}
+
+.name-input::placeholder {
+	color: #929292;
+}
+
+/*
+NAME SUBMIT BUTTON STYLES
+*/
+
+.name-submit {
+	color: #fff;
+	font-weight: 1.5rem;
+	border: 1px solid #00d1b2;
+	background: #00d1b2;
+	border-radius: 0 15px 15px 0;
+}
+
+.name-submit:hover {
+	border: 1px solid #00bea2;
+	background: #00bea2;
+}
+
+.name-submit:focus {
+	border: 1px solid #00a58c;
+	background: #00a58c;
+}
+
+/*
+GREETING MESSAGE STYLES
+*/
+
+.greeting-message {
+	order: 1;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.3rem;
+}
+
+/*
+FORM ERROR STYLES
+*/
+
+.input-errors {
+	order: 3;
+	font-size: 0.8rem;
+	color: rgb(247, 72, 72);
+	height: 40px;
+}
+
+/* 
+ALL USERS BUTTON STYLES
+ */
+
+.url-login-page {
+	justify-self: flex-end;
+	align-self: flex-end;
+	
+}

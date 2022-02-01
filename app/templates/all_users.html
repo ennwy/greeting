@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='all_users_page.css') }}"/>
+
+<div class="all-users-page-wrapper">
+	{% if users %}
+	<ul class="user-list">
+
+		{% for username in users %}
+
+		<li class="user-list-item">{{ username }}</li>
+
+		{% endfor %}
+
+	</ul>
+	{% endif %}
+	<a href="{{ url_for('login') }}" class="btn url-all-users">Back</a>
+</div>
+{% endblock %}

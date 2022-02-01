@@ -1,0 +1,55 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Sans-serif;
+	color: #181818;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 100vw;
+	max-width: 100vw;
+}
+
+.btn {
+	text-align: center;
+	padding: 10px;
+	width: 140px;
+	margin: 10px;
+	outline: none;
+	color: #fff;
+	border: 1px solid #00d1b2;
+	background: #00d1b2;
+	border-radius: 15px;
+}
+
+.btn:hover {
+	border: 1px solid #00bea2;
+	background: #00bea2;
+}
+
+.btn:focus {
+	border: 1px solid #00a58c;
+	background: #00a58c;
+}
