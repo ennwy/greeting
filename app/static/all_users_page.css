@@ -1,6 +1,7 @@
 .all-users-page-wrapper {
 	display: grid;
 	width: 100%;
+	max-width: 100%;
 	height: min-content;
 	padding: 20px;
 }
@@ -15,6 +16,6 @@
 .url-all-users {
 	position: fixed;
 	justify-self: flex-end;
-	margin: 10px;
-	bottom: 8px;
+	right: 8px;
+	bottom: 20px;
 }
